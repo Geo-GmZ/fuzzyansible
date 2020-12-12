@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  task:
+  - name: install packages
+    package:
+      name:
+        - htop
+        - vlc
+        
