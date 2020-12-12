@@ -3,10 +3,9 @@
   connection: local
   become: true
 
-  task:
+  tasks:
   - name: install packages
     package:
       name:
         - htop
         - vlc
-        
